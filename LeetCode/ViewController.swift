@@ -11,9 +11,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        callRomanToInt()
     }
 
-
+    func callTwoSum() {
+        let res = TwoSum()
+        print(res.twoSum([1, 2, 3, 4, 5], 9))
+    }
+    
+    func callPalindromeNumber() {
+        let res = PalindromeNumber()
+        print(res.palindromeNumber(121))
+    }
+    
+    func callRomanToInt() {
+        let res = RomanToInt()
+        print(res.romanToInt("MCMXCIV"))
+    }
 }
 
