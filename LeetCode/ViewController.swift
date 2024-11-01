@@ -11,12 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        callRomanToInt()
+        callLongestCommonPrefix()
     }
 
-    func callTwoSum() {
-        let res = TwoSum()
-        print(res.twoSum([1, 2, 3, 4, 5], 9))
+    func callLongestCommonPrefix() {
+        let res = LongestCommonPrefix()
+        print(res.longestCommonPrefix(["a"]))
+    }
+    
+    func callRomanToInt() {
+        let res = RomanToInt()
+        print(res.romanToInt("MCMXCIV"))
     }
     
     func callPalindromeNumber() {
@@ -24,9 +29,9 @@ class ViewController: UIViewController {
         print(res.palindromeNumber(121))
     }
     
-    func callRomanToInt() {
-        let res = RomanToInt()
-        print(res.romanToInt("MCMXCIV"))
+    func callTwoSum() {
+        let res = TwoSum()
+        print(res.twoSum([1, 2, 3, 4, 5], 9))
     }
 }
 
