@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     func callLongestCommonPrefix() {
         let res = LongestCommonPrefix()
-        print(res.longestCommonPrefix(["a"]))
+        print(res.longestCommonPrefix(["ab", "a"]))
     }
     
     func callRomanToInt() {

@@ -9,18 +9,12 @@ class LongestCommonPrefix {
     func longestCommonPrefix(_ strs: [String]) -> String {
         
         var longestPrefix : String = ""
-        var minLength : Int = strs[0].count
-        for str in strs {
-            let len = str.count
-            if len <= minLength {
-                minLength = len
-            }
-        }
-        
+        let shortestLen = strs
+                   .map { $0.count }
+                   .min()!
         let strs = strs.map { Array($0) }
         
-        
-        for i in 0..<minLength {
+        for i in 0..<shortestLen  {
             let c = strs[0][i]
             for str in strs {
                 if str[i] != c {
