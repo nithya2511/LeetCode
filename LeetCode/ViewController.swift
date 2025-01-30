@@ -11,7 +11,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        callLongestCommonPrefix()
+        mergeTwoSortedLists()
+    }
+    
+    func mergeTwoSortedLists() {
+        
+        let res = MergeTwoSortedLists()
+//        let list1 = ListNode(1, ListNode(2, ListNode(4, nil)))
+//        let list2 = ListNode(1, ListNode(3, ListNode(4, nil)))
+        let list1 = ListNode(2)
+        let list2 = ListNode(1)
+        print(res.mergeTwoSortedLists(list1, list2))
+    }
+    
+    func validParentheses() {
+        let res = ValidParentheses()
+        print(res.validParentheses("([])"))
     }
 
     func callLongestCommonPrefix() {

@@ -13,7 +13,7 @@ class LongestCommonPrefix {
                    .map { $0.count }
                    .min()!
         let strs = strs.map { Array($0) }
-        
+        			
         for i in 0..<shortestLen  {
             let c = strs[0][i]
             for str in strs {
