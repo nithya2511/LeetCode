@@ -11,16 +11,30 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        mergeTwoSortedLists()
+        removeDuplicatesFromSortedArrays()
+    }
+    
+    func removeElements() {
+        
+        let res = RemoveElement()
+        var nums = [3,2,2,3]
+        print(res.removeElement(&nums, 3))
+    }
+    
+    func removeDuplicatesFromSortedArrays() {
+        
+        let res = RemoveDuplicatesFromSortedArray()
+        var nums = [1,1,2]
+        print(res.removeDuplicates(&nums))
     }
     
     func mergeTwoSortedLists() {
         
         let res = MergeTwoSortedLists()
-//        let list1 = ListNode(1, ListNode(2, ListNode(4, nil)))
-//        let list2 = ListNode(1, ListNode(3, ListNode(4, nil)))
-        let list1 = ListNode(2)
-        let list2 = ListNode(1)
+        let list1 = ListNode(1, ListNode(2, ListNode(4, nil)))
+        let list2 = ListNode(1, ListNode(3, ListNode(4, nil)))
+//        let list1 = ListNode(2)
+//        let list2 = ListNode(1)
         print(res.mergeTwoSortedLists(list1, list2))
     }
     
