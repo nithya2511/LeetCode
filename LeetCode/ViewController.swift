@@ -11,7 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        removeDuplicatesFromSortedArrays()
+        return findTheFirstOccurenceInAString()
+    }
+    
+    func findTheFirstOccurenceInAString(){
+        
+        let res = FindTheIndexOfFirstOccurenceInAString()
+        print(res.findIndex("aaa", "aaaa"))
+        
     }
     
     func removeElements() {
