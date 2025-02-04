@@ -11,32 +11,37 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        return findTheFirstOccurenceInAString()
+        return lengthOfLastWord()
+    }
+    
+    func lengthOfLastWord() {
+        let res = LengthOfLastWord()
+        print(res.lengthOfLastWord("luffy is still joyboy"))
+    }
+    
+    func searchInsertPosition() {
+        let res = SearchInsertPosition()
+        print(res.searchInsertPosition([1,3,5,6], 2))
     }
     
     func findTheFirstOccurenceInAString(){
-        
         let res = FindTheIndexOfFirstOccurenceInAString()
         print(res.findIndex("aaa", "aaaa"))
-        
     }
     
     func removeElements() {
-        
         let res = RemoveElement()
         var nums = [3,2,2,3]
         print(res.removeElement(&nums, 3))
     }
     
     func removeDuplicatesFromSortedArrays() {
-        
         let res = RemoveDuplicatesFromSortedArray()
         var nums = [1,1,2]
         print(res.removeDuplicates(&nums))
     }
     
     func mergeTwoSortedLists() {
-        
         let res = MergeTwoSortedLists()
         let list1 = ListNode(1, ListNode(2, ListNode(4, nil)))
         let list2 = ListNode(1, ListNode(3, ListNode(4, nil)))
