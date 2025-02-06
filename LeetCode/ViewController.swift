@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        return lengthOfLastWord()
+        return plusOne()
     }
     
+    func plusOne() {
+        let res = PlusOne()
+        print(res.plusOne([9, 9]))
+    }
     func lengthOfLastWord() {
         let res = LengthOfLastWord()
         print(res.lengthOfLastWord("luffy is still joyboy"))
