@@ -13,7 +13,7 @@ class SearchInsertPosition {
         
         while low <= high {
             
-            var mid = (low + high) / 2
+            let mid = (low + high) / 2
             
             if nums[mid] == target {
                 return mid

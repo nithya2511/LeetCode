@@ -11,7 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        return plusOne()
+        return sqrtOfx()
+    }
+    
+    func sqrtOfx() {
+        let res = SqrtOfX()
+        print(res.sqrtOfX(1))
+    }
+    
+    func addBinary() {
+        let res = AddBinary()
+        print(res.addBinary("11", "1"))
     }
     
     func plusOne() {
