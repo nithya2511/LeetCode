@@ -61,14 +61,25 @@ class MergeTwoSortedLists {
             return listB
         }
     }
-}
-
-class ListNode {
-    var val : Int
-    var next : ListNode?
     
-    public init() { self.val = 	0; self.next = nil}
-    public init(_ val : Int) {self.val = val ; self.next = nil}
-    public init(_ val : Int, _ next : ListNode?) { self.val =  val ; self.next = next}
-    
+    func mergeTwoLists_withoutSplicing(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+            let dummy = ListNode(0)
+            var current = dummy
+            var a = list1
+            var b = list2
+            
+            while let nodeA = a, let nodeB = b {
+                if nodeA.val < nodeB.val {
+                    current.next = nodeA
+                    a = nodeA.next
+                } else {
+                    current.next = nodeB
+                    b = nodeB.next
+                }
+                current = current.next!
+            }
+            
+            current.next = a ?? b
+            return dummy.next
+        }
 }

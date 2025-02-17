@@ -11,7 +11,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        return sqrtOfx()
+        return mergeSortedArrays()
+    }
+    
+    func mergeSortedArrays() {
+        let res = MergeSortedArrays()
+        var nums1 = [0]
+        res.merge(&nums1, 0, [1], 1)
+        print(nums1)
+    }
+    
+    func removeDuplicatesFromSortedList() {
+        let res = RemoveDuplicatesFromSortedList()
+        let list = ListNode(1, ListNode(1, ListNode(2, ListNode(2, ListNode(3, ListNode(3))))))
+        let helper = ListHelpers()
+        helper.printList(res.deleteDuplicates(list))
+        
+    }
+    func climbingStairs() {
+        let res = ClimbingStairs()
+        print(res.climbingStairs(6))
     }
     
     func sqrtOfx() {
